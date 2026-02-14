@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function döyüş(qəhrəman1, güc1, qəhrəman2, güc2){
+            if(güc1>güc2){
+                console.log(qəhrəman1+ " daha güclüdür və qalib gəldi!");
+            }else if(güc1<güc2){
+                console.log(qəhrəman2+ " daha güclüdür və qalib gəldi!");
+            }else{
+                console.log("Hər biri bərabərdir!");
+            }
+        }
+        döyüş("Mickey Mouse", Math.ceil(Math.random()*1000), "Mini Mouse", Math.ceil(Math.random()*1000))
+    </script>
+</body>
+</html>
