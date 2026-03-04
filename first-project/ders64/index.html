@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //concat
+        let num1 =[1, 2, 3, 4, 5];
+        let num2=[6, 7, 8, 9, 10];
+        let yeni=num1.concat(num2);
+        console.log(yeni);
+        //copyWithIn
+        let rəqəm=[2, 6, 8, 3];
+        rəqəm.copyWithIn(0,2);
+        console.log(rəqəm);
+        //enteries
+        let rəqəmlər=[1, 6, 9, 3];
+        let num= rəqəmlər.enteries();
+        console.log(num);
+        //fill
+        let meyveler=["alma", "banan", "armud", "gilas"];
+        console.log(meyveler.fill("alça"))
+        //lenght
+        let arr = [10, 20, 30];
+        console.log(arr.length);
+        //indexOf
+        let meyve = ["alma", "armud", "banan"];
+        console.log(meyve.indexOf("armud")); 
+        //includes
+        let includes = [5, 10, 15];
+        console.log(includes.includes(10));
+        //from
+        let text = "HELLO";
+        let yeniText = Array.from(text);
+        console.log(yeniText);
+        //lastIndexOf
+        const colors = ["qırmızı", "yaşıl", "mavi"];
+        const lastIndex = colors.lastIndexOf("yaşıl");
+        console.log(lastIndex); 
+        //reverse
+        const herfler = ["a", "b", "c"];
+        herfler.reverse();
+        console.log(herfler);
+        //sort, filter, forEach yaza bilmədim
+    </script>
+</body>
+</html>
