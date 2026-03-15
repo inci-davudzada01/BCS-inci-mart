@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //1ci tapşırıq
+        let user ={
+            firstName: "Inci",
+            lastName: "Davudzade",
+            getTamAd: function(){
+                return this.firstName+ " " + this.lastName
+            }
+        };
+        console.log(user.getTamAd())
+        //2ci tapşırıq
+        let bankAccount ={
+            balance: 1000,
+            setDeposit: function(rəqəm){
+                if(rəqəm<0){
+                    console.log("Məbləğ mənfi ola bilməz!")
+                }else{
+                    this.balance+=rəqəm
+                }
+            },
+            getBalance: function(){
+                return this.balance;
+            }
+        };
+        let mebleg = Number(prompt("Məbləği daxil edin:"));
+        bankAccount.setDeposit(mebleg);
+        console.log(bankAccount.balance);
+
+
+
+    </script>
+</body>
+</html>

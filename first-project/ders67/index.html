@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let istifadəçi={
+            ad: "Eleonora",
+            soyad: "Davudzadə",
+            gözRəngi: "qəhvəyi",
+            yaş: 7,
+            setYaş: function(yeniYaş){
+                this.yaş = yeniYaş
+            },
+            getYaş: function(){
+                return this.yaş
+            } 
+         };
+         istifadəçi.setYaş(8);
+         console.log(istifadəçi.getYaş())  
+
+    </script>
+</body>
+</html>
