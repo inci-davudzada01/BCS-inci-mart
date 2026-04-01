@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //tapşırıq 1
+        let mağaza = new Map();
+        mağaza.set("alma", 2);
+        mağaza.set("banan", 3);
+        mağaza.set("portağal", 4);
+        console.log("Bananin qiyməti: ", mağaza.get("banan"));
+        if(mağaza.has("Albalı")== false){
+            console.log("Məhsul tapılmadı");
+        }
+        mağaza.set("alma", 2.5);
+        console.log(mağaza);
+        //tapşırıq 2
+        let tələbələr = new Map([
+            ["Leyla", 85],
+            ["Rauf", 42],
+            ["Aytən", 90],
+            ["Elnur", 55]
+        ]);
+        for(let [ad, bal] of tələbələr){
+            if(bal>51){
+                console.log(ad + " imtahandan keçdi");
+            }else{
+                console.log(ad + " imtahandan kəsildi");
+            }
+        }
+        
+
+    </script>
+</body>
+</html>
