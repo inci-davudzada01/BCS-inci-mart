@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //1ci tapşırıq
+        class Rectangle{
+            constructor(width, height){
+                this.width = width;
+                this.height = height;
+            }
+            getArea(){
+                return this.width * this.height;
+            }
+        }
+        let newRectangle = new Rectangle(2, 4);
+        console.log(getArea());
+
+        //2ci tapşırıq
+        class Vehicle {
+            constructor(brand) {
+                this.brand = brand;
+            }
+            start() {
+                console.log("Nəqliyyat işə düşdü");
+            }
+        } 
+        class Car extends Vehicle {
+            constructor(brand) {
+                super(brand); 
+            }
+        }
+        let myCar = new Car("BMW");
+        console.log("Marka:", myCar.brand);
+        
+
+
+
+    </script>
+</body>
+</html>
