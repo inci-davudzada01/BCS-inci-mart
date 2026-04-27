@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<div id="card" style="border: 1px solid #ccc; padding: 20px; width: 300px; text-align: center;">
+    <h2 id="main-title">Məhsul Adı</h2>
+    <p class="description">Bu məhsul haqqında qısa məlumatdır.</p>
+    <p class="description">Qiymət: 10 AZN</p>
+    
+    <button id="change-btn">Məlumatları Yenilə</button>
+</div>
+    <script>
+        const button = document.getElementById("change-btn");
+        const h2 = document.getElementById("main-title");
+        const p = document.getElementsByClass("description");
+        const div = document.querySelector("#card");
+        div.style.background = "lightgray";
+        button.addEventListener("click", ()=>{
+            h2.innerText("Yenilənmiş Məhsul");
+            p[1].style.color= "red";
+            p[1].innerText = "Qiymət: 15 AZN";
+            div.style.border = "2px solid blue";
+
+        });
+    </script>
+</body>
+</html>
